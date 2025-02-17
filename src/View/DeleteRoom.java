@@ -17,6 +17,7 @@ public class DeleteRoom extends javax.swing.JFrame {
     public DeleteRoom(User currentUser, Room room) {
         this.currentUser = currentUser;
         this.room = room;
+        this.setUndecorated(true);
         initComponents();
         this.setVisible(true);
         this.setLocationRelativeTo(null);

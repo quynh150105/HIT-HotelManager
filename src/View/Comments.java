@@ -13,6 +13,7 @@ public class Comments extends javax.swing.JFrame {
     
     public Comments(User currentUser) {
         this.currentUser = currentUser;
+        this.setUndecorated(true);
         initComponents();
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);

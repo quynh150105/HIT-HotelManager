@@ -20,8 +20,7 @@ public class CheckOutAndComment extends javax.swing.JFrame {
     private static Room room;
     public CheckOutAndComment(User currentUser) {
         this.currentUser = currentUser;
-//        this.room = room;
-//        this.bookingRoom = bookingRoom;
+        this.setUndecorated(true);
         initComponents();
         this.setVisible(true);
         this.setLocationRelativeTo(null);

@@ -24,24 +24,32 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="TitleHITHotelManager" alignment="1" min="-2" pref="663" max="-2" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="InputUsername" max="32767" attributes="0"/>
-                          <Component id="UsnameLabel" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
-                          <Component id="PsLabel" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="ButtonSignUp" min="-2" pref="123" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                              <Component id="ButtonForgetPw" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="TitleHITHotelManager" alignment="1" min="-2" pref="663" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="InputUsername" max="32767" attributes="0"/>
+                                  <Component id="UsnameLabel" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
+                                  <Component id="PsLabel" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="ButtonSignUp" min="-2" pref="123" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                                      <Component id="ButtonForgetPw" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="InputPassword" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="ButtonLogin" alignment="0" min="-2" pref="357" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="InputPassword" alignment="0" max="32767" attributes="0"/>
-                          <Component id="ButtonLogin" alignment="0" min="-2" pref="357" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="406" max="-2" attributes="0"/>
+                      <Component id="BTExit" min="-2" pref="97" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="158" max="32767" attributes="0"/>
@@ -68,7 +76,9 @@
                   <Component id="ButtonSignUp" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
                   <Component id="ButtonForgetPw" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              <Component id="BTExit" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -114,7 +124,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="sansserif" size="14" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Forget password"/>
+        <Property name="text" type="java.lang.String" value="Forgot password"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonForgetPwActionPerformed"/>
@@ -132,6 +142,14 @@
       </Events>
     </Component>
     <Component class="javax.swing.JPasswordField" name="InputPassword">
+    </Component>
+    <Component class="javax.swing.JButton" name="BTExit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exit"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BTExitActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

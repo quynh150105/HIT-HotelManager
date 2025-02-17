@@ -10,6 +10,7 @@ public class SignUp extends javax.swing.JFrame {
     private User user;
 
     public SignUp() {
+        this.setUndecorated(true);
         initComponents();    
         this.setLocationRelativeTo(null);
         this.setVisible(true);

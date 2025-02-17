@@ -12,6 +12,7 @@ public class CustomerBill extends javax.swing.JFrame {
 
     public CustomerBill(User currentUser) {
         this.currentUser = currentUser;
+        this.setUndecorated(true);
         initComponents();
         this.setVisible(true);
         this.setLocationRelativeTo(null);

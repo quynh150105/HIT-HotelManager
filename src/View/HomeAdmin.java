@@ -10,6 +10,7 @@ public class HomeAdmin extends javax.swing.JFrame {
     
     public HomeAdmin(User currentUser) {
         this.currentUser = currentUser;
+        this.setUndecorated(true);
         initComponents();
         this.setVisible(true);
         this.setLocationRelativeTo(null);
@@ -35,6 +36,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         BTInfoCustomer = new javax.swing.JButton();
         BtDanhGia = new javax.swing.JButton();
         ListBill = new javax.swing.JButton();
+        BTExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("HomeAdmin");
@@ -106,6 +108,13 @@ public class HomeAdmin extends javax.swing.JFrame {
             }
         });
 
+        BTExit.setText("Thoát");
+        BTExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTExitActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -126,14 +135,16 @@ public class HomeAdmin extends javax.swing.JFrame {
                     .addComponent(ListBill, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(145, Short.MAX_VALUE)
+                .addContainerGap(122, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(TitleHITHotelManager, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(130, 130, 130))
+                        .addGap(153, 153, 153))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(BtLogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(407, 407, 407))))
+                        .addGap(130, 130, 130)
+                        .addComponent(BTExit, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(282, 282, 282))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -157,7 +168,9 @@ public class HomeAdmin extends javax.swing.JFrame {
                     .addComponent(BtAddRoom, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BtSearch))
                 .addGap(89, 89, 89)
-                .addComponent(BtLogOut)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BtLogOut)
+                    .addComponent(BTExit))
                 .addGap(121, 121, 121))
         );
 
@@ -272,6 +285,10 @@ public class HomeAdmin extends javax.swing.JFrame {
         System.out.println("thuc hien xem danh sach hoa don");
     }//GEN-LAST:event_ListBillActionPerformed
 
+    private void BTExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_BTExitActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -309,6 +326,7 @@ public class HomeAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BDeleteRoom;
+    private javax.swing.JButton BTExit;
     private javax.swing.JButton BTInfoCustomer;
     private javax.swing.JButton BtAddRoom;
     private javax.swing.JButton BtDanhGia;

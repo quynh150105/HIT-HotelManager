@@ -14,6 +14,7 @@ public class UpdateRoom extends javax.swing.JFrame {
     private DefaultTableModel tableModel;
     
     public UpdateRoom(User currentUser, Room room) {
+        this.setUndecorated(true);
         this.currentUser = currentUser;
         this.room = room;
         initComponents();

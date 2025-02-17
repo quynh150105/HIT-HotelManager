@@ -15,6 +15,7 @@ public class ListRoomCustomer extends javax.swing.JFrame {
     private static User currentUser;
     
     public ListRoomCustomer(User currentUser) {
+        this.setUndecorated(true);
         initComponents();
         this.currentUser = currentUser;
         this.setVisible(true);

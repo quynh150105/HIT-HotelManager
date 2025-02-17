@@ -8,6 +8,7 @@ public class InfoUser extends javax.swing.JFrame {
     
     public InfoUser(User curentUser) {
         this.curentUser = curentUser;
+        this.setUndecorated(true);
         initComponents();
         this.setLocationRelativeTo(null);
         this.setVisible(true);

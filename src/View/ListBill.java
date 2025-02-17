@@ -12,7 +12,8 @@ public class ListBill extends javax.swing.JFrame {
     private static DefaultTableModel tableModel;
     
     public ListBill(User currentUser) {
-        this.currentUser = currentUser;                
+        this.currentUser = currentUser;
+        this.setUndecorated(true);
         initComponents();
         this.setVisible(true);
         this.setLocationRelativeTo(null);

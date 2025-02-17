@@ -15,7 +15,7 @@ public class AddRoom extends javax.swing.JFrame {
     public AddRoom(User currentUser, Room room) {
         this.room = room;
         this.currentUser = currentUser;
-                
+        this.setUndecorated(true);        
         initComponents();
         this.setLocationRelativeTo(null);
         this.setVisible(true);

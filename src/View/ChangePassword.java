@@ -14,6 +14,7 @@ public class ChangePassword extends javax.swing.JFrame {
      */
     public ChangePassword( User curentUser) {
         this.curentUser = curentUser;
+        this.setUndecorated(true);
         initComponents();
         this.setLocationRelativeTo(null);
         this.setVisible(true);

@@ -13,6 +13,7 @@ public class CustomerProfile extends javax.swing.JFrame {
   private DefaultTableModel tableModel;
     public CustomerProfile(User currentUser) {
         this.currentUser = currentUser;
+        this.setUndecorated(true);
         initComponents();
         this.setVisible(true);
         this.setLocationRelativeTo(null);

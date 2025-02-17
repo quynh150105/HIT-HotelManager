@@ -11,8 +11,8 @@ public class ForgetPassword extends javax.swing.JFrame {
     private User user;
 
     public ForgetPassword() {
+        this.setUndecorated(true);
         initComponents();
-//        this.user = new User();     
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }

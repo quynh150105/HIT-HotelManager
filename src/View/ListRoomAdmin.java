@@ -11,6 +11,7 @@ public class ListRoomAdmin extends javax.swing.JFrame {
     private static DefaultTableModel tableModel;
 
     public ListRoomAdmin( User currentUser) {
+        this.setUndecorated(true);
         initComponents();
         this.currentUser = currentUser;
         this.setVisible(true);

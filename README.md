@@ -40,9 +40,6 @@ Xây dựng một ứng dụng quản lý khách sạn bằng Java, sử dụng 
 
 ### 1.3 Mô hình cơ sở dữ liệu:
 
-![Uploading 15173fe6-e9a5-4dfb-b11b-e21d54de5a6e.jpg…]()
-
-
 Cơ sở dữ liệu MySQL gồm các bảng chính:
 
 - _room_: number, type, price, status.
